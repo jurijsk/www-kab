@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <h1>Welcome to the homepage</h1>
-    <AppAlert>
-      This is an auto-imported component
-    </AppAlert>
-  </div>
+	<div>
+		<h1>This looks strangely like Karo's new website</h1>
+	</div>
 </template>

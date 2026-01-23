@@ -1,4 +1,4 @@
 <template>
-	<!-- put markup shared across all pages, ex: NavBar -->
-    <NuxtPage /> <!-- olternatively remove this file altogether -->
+	<NuxtPage />
+	<hr> all all the stuff that is needed on all pages here
 </template>
