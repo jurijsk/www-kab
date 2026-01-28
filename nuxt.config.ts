@@ -11,7 +11,9 @@ export default defineNuxtConfig({
 
 	devtools: { enabled: true },
 
-	css: ['~/assets/main.css'],
+	css: [
+		'@picocss/pico',
+		'~/assets/main.css'],
 	modules: [
 		'@nuxtjs/i18n',
 		'@nuxt/fonts',
