@@ -1,0 +1,65 @@
+/* CSS variables generated from Figma variables (node 0:1)
+   - BASE variables (keep as-is from Figma, used only to define semantic variables)
+   - Semantic variables reference BASE variables where available
+   - Hyphens from Figma names replaced with underscores in variable names
+*/
+
+:root {
+	/* BASE (do not use directly in rules) */
+
+	----white: #ffffff;
+	----indigo: #2d4262;
+
+	----dark_sage_green: #5b9362;
+	----deep_green: #286d59;
+	----sustainnable_green: #98ba9c;
+	----green_haze: #f5fff6;
+	----almost_black: #4b5563;
+	----text_light_grey: #69717c;
+	----black: #2b2e32;
+	--font_family_direct_speech: "Neuton";
+	--font_family_main: "Roboto Flex";
+	--font_family_accent: "Courier Prime";
+
+	/* Base size */
+	--base_size: 18px;
+
+	/* Colors (semantic) */
+	--body_text_inverted: var(----green_haze);
+	--alt_background: var(----green_haze);
+	--decorative_lines_inverted: var(----green_haze);
+	--background: var(----white);
+	--background_inverted: var(----indigo);
+	--decorative_lines: var(----indigo);
+	--direct_speech: var(----indigo);
+	--accent_text: var(----deep_green);
+	--direct_speech_alt: var(----deep_green);
+	--aux_content: var(----almost_black);
+	--secondary_text: var(----text_light_grey);
+	--highlight_text: var(----deep_green);
+	--logoForeground: var(----white);
+	--logoBackground: #00D084;
+	--hero_background: var(----indigo);
+	--action_text: #2b373d;
+	--service_text_highlight: #0050c9;
+
+	/* Sizes (px -> rem, base 18px) */
+	--content_max_width: 111.1rem;
+	--page_side_spacing: 4.4rem;
+	--section_block_spacing: 9.3rem;
+	--section_min_height: 52.2rem;
+	--text_column_gap: 3.3rem;
+
+	/* Fonts (use proper font shorthand; families reference base variables when available) */
+	--body_text: 400 1rem/1.3rem var(--font_family_main);
+	--body_text_alt: 400 1.1rem/1.6rem var(--font_family_main);
+	--small_talk: 400 1.3rem/2.0rem var(--font_family_direct_speech);
+	--big_talk: 700 2.7rem/5.6rem var(--font_family_direct_speech);
+	--body_text_highlight: 400 1.8rem/2.7rem var(--font_family_main);
+	--section_title: 600 2.7rem/5.6rem var(--font_family_main);
+	--subsection_title: 400 1.8rem/5.6rem var(--font_family_main);
+	--aux_text: 400 0.7rem/0.7rem var(--font_family_main);
+	--wayfinder_text: 600 0.8rem/0.8rem "Segoe UI";
+	--SIDENOTE: 400 0.7rem/0.7rem "Segoe UI";
+	--accent_header: 400 2.7rem/5.6rem var(--font_family_accent);
+}

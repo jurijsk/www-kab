@@ -10,6 +10,8 @@ export default defineNuxtConfig({
 	},
 
 	devtools: { enabled: true },
+
+	css: ['~/assets/main.css'],
 	modules: [
 		'@nuxtjs/i18n',
 		'@nuxt/fonts',
@@ -19,8 +21,8 @@ export default defineNuxtConfig({
 	i18n: {
 		defaultLocale: 'en',
 		locales: [
-			{ code: 'de', name: 'Deutsch', file: 'de.json' },
 			{ code: 'en', name: 'English', file: 'en.json' },
+			{ code: 'de', name: 'Deutsch', file: 'de.json' },
 			{ code: 'da', name: 'Dansk', file: 'da.json' },
 		]
 	},

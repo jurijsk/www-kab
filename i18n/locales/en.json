@@ -1,3 +1,28 @@
 {
-	"welcome": "Welcome. changed"
+	"test": "TEST STRING FROM locales/en.json",
+	"site": {
+		"name": "Karoline Antonia Böhmecke"
+	},
+	"nav": {
+		"work": "Work",
+		"about": "About",
+		"contact": "Contact"
+	},
+	"hero": {
+		"title": "Karoline Antonia Böhmecke",
+		"subtitle": "This looks strangely like Karo's new website",
+		"cta": "Contact"
+	},
+	"contactBanner": {
+		"headline": "Product expertise when it matters.",
+		"bookA": "Book a",
+		"call": "call",
+		"orDropLine": "or drop a line on",
+		"linkedin": "LinkedIn",
+		"callUrl": "https://www.cal.com/karo",
+		"linkedinUrl": "https://www.linkedin.com/in/karoline-antonia-b%C3%B6hmecke/"
+	},
+	"footer": {
+		"copy": "© Karoline Antonia Böhmecke"
+	}
 }
