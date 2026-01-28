@@ -43,6 +43,7 @@ This is a small Nuxt 4 single-page portfolio site (static target). Keep guidance
   - Prefer component-scoped `<style>` blocks in files under `app/components` and place global styles in `app/assets` or `app/styles`.
   - Follow simple, maintainable conventions (CSS variables, logical class names). The README and Figma designs are the ground truth for visual decisions.
   - CSS custom properties: use underscores to separate words (example: `--custom_property`). Always keep the leading `--` when declaring variables.
+  - **CSS class naming:** Do not use BEM-style `parent__child` naming. Instead, use CSS nesting to scope styles and choose semantic class names that describe what the element *is* or *does*, not its location in the DOM hierarchy. Example: use `.hero { .headline { ... } }` instead of `.hero__headline { ... }`.
 
 - **When an AI agent should modify code:**
   - If adding a locale: update `i18n/locales/<code>.json` and add the locale entry in `nuxt.config.ts`.

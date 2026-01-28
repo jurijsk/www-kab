@@ -1,0 +1,9 @@
+@import url(variables.css);
+
+body {
+	font: var(--body_text);
+}
+
+section {
+	padding: 0 var(--page_side_spacing);
+}

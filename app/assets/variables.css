@@ -17,15 +17,29 @@
 	----almost_black: #4b5563;
 	----text_light_grey: #69717c;
 	----black: #2b2e32;
-	--font_family_direct_speech: "Neuton";
-	--font_family_main: "Roboto Flex";
-	--font_family_accent: "Courier Prime";
 
 	/* Base size */
-	--base_size: 18px;
+	----type_ramp_base: 20px;
+	font-size: var(----type_ramp_base);
+
+	----type_ramp_sxx: 0.6rem;
+	----type_ramp_sx: 0.7rem;
+	----type_ramp_s: 0.9rem;
+	----type_ramp_m: 1rem;
+	----type_ramp_l: 1.1rem;
+	----type_ramp_lx: 1.4rem;
+	----type_ramp_lxx: 1.8rem;
+	----type_ramp_h2: 2.4rem;
+	----type_ramp_h1: 4rem;
+	--font_family_direct_speech: "Neuton";
+	--font_family_main: "Ysabeau Office";
+	/*"Roboto Flex";*/
+	--font_family_accent: "Courier Prime";
+
+
 
 	/* Colors (semantic) */
-	--body_text_inverted: var(----green_haze);
+	--text_inverted: var(----white);
 	--alt_background: var(----green_haze);
 	--decorative_lines_inverted: var(----green_haze);
 	--background: var(----white);
@@ -50,14 +64,19 @@
 	--section_min_height: 52.2rem;
 	--text_column_gap: 3.3rem;
 
+
+	--font-size-section-title: 2.1rem;
+
 	/* Fonts (use proper font shorthand; families reference base variables when available) */
-	--body_text: 400 1rem/1.3rem var(--font_family_main);
-	--body_text_alt: 400 1.1rem/1.6rem var(--font_family_main);
+	--body_text: 400 var(----type_ramp_s)/1.6 var(--font_family_main);
+	--body_text_alt: 400 (var(----type_ramp_l))/1.6 var(--font_family_main);
 	--small_talk: 400 1.3rem/2.0rem var(--font_family_direct_speech);
 	--big_talk: 700 2.7rem/5.6rem var(--font_family_direct_speech);
-	--body_text_highlight: 400 1.8rem/2.7rem var(--font_family_main);
-	--section_title: 600 2.7rem/5.6rem var(--font_family_main);
-	--subsection_title: 400 1.8rem/5.6rem var(--font_family_main);
+	--body_text_highlight: 400 var(----type_ramp_lx)/1.2 var(--font_family_main);
+
+
+	--section_title: 600 var(--font-size-section-title)/1.1 var(--font_family_main);
+	--subsection_title: 400 var(----type_ramp_lxx)/1.4 var(--font_family_main);
 	--aux_text: 400 0.7rem/0.7rem var(--font_family_main);
 	--wayfinder_text: 600 0.8rem/0.8rem "Segoe UI";
 	--SIDENOTE: 400 0.7rem/0.7rem "Segoe UI";

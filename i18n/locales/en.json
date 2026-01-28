@@ -9,9 +9,14 @@
 		"contact": "Contact"
 	},
 	"hero": {
-		"title": "Karoline Antonia Böhmecke",
-		"subtitle": "This looks strangely like Karo's new website",
-		"cta": "Contact"
+		"headline": "Product Management on Demand",
+		"subtitle": "Sharpening strategies. Developing teams.",
+		"name": "Karoline Antonia Böhmecke",
+		"locations": {
+			"munster": "Münster, CH",
+			"berlin": "Berlin, DE",
+			"remote": "Remote, UTC+1"
+		}
 	},
 	"contactBanner": {
 		"headline": "Product expertise when it matters.",
