@@ -1,5 +1,5 @@
 <template>
-	<section class="contact-banner">
+	<section class="contact_banner">
 		<div class="content">
 			<p class="headline">{{ $t('contactBanner.headline') }}</p>
 			<p class="cta"> {{ $t('contactBanner.bookA') }} <a :href="$t('contactBanner.callUrl')">{{ $t('contactBanner.call') }}</a> {{ $t('contactBanner.orDropLine') }} <a
@@ -9,7 +9,7 @@
 	</section>
 </template>
 <style scoped>
-.contact-banner {
+.contact_banner {
 	background-color: var(--background_inverted);
 	display: flex;
 	justify-content: center;
@@ -20,8 +20,6 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 100%;
-		max-width: var(--content_max_width);
 		gap: 2rem;
 	}
 

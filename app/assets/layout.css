@@ -4,6 +4,28 @@ body {
 	font: var(--body_text);
 }
 
+/* 
+ * Sections span full viewport width (for backgrounds) but contain 
+ * an inner element that constrains content to --content_max_width.
+ * Use .full-bleed on a section to enable this pattern.
+ */
 section {
+	container-type: inline-size;
+	container-name: page;
+	margin-inline: auto;
 	padding: 0 var(--page_side_spacing);
+
+	.content {
+		width: 100%;
+		margin: 0 auto;
+		max-width: var(--content_max_width);
+
+	}
+}
+
+
+/* Full-bleed section: spans viewport, inner content via .grid or manual padding */
+section.full-bleed {
+	max-width: none;
+	padding: 0;
 }

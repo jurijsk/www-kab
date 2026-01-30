@@ -45,6 +45,27 @@ This is a small Nuxt 4 single-page portfolio site (static target). Keep guidance
   - CSS custom properties: use underscores to separate words (example: `--custom_property`). Always keep the leading `--` when declaring variables.
   - **CSS class naming:** Do not use BEM-style `parent__child` naming. Instead, use CSS nesting to scope styles and choose semantic class names that describe what the element *is* or *does*, not its location in the DOM hierarchy. Example: use `.hero { .headline { ... } }` instead of `.hero__headline { ... }`.
 
+- **Responsive design:**
+  - **Fluid typography:** The base font size (`----type_ramp_base`) uses `clamp()` to scale smoothly from 16px at 375px viewport to 22px at 2000px+. All `rem`-based sizes scale automatically.
+  - **Container queries:** Use `@container page (max-width: Xrem)` for layout changes instead of viewport-based `@media` queries. This responds to content width (max 2000px) rather than screen size.
+  - **Fallback pattern:** Always include a fallback for older browsers:
+    ```css
+    @container page (max-width: 50rem) { /* modern browsers */ }
+    @supports not (container-type: inline-size) {
+      @media (max-width: 900px) { /* fallback */ }
+    }
+    ```
+  - **Full-bleed sections:** Sections always span full viewport width (for backgrounds). Inside, use `.section_content` wrapper to constrain content:
+    ```html
+    <section class="my-section">
+      <div class="section_content">
+        <!-- content constrained to max-width -->
+      </div>
+    </section>
+    ```
+    For special cases like Hero (two columns with different backgrounds), handle layout directly in the section without `.section_content`.
+  - **Fluid spacing:** `--page_side_spacing` and `--section_block_spacing` also use `clamp()` for proportional margins.
+
 - **When an AI agent should modify code:**
   - If adding a locale: update `i18n/locales/<code>.json` and add the locale entry in `nuxt.config.ts`.
   - If adding pages/components: place them under `app/pages` or `app/components` respectively and avoid changing global layout unless requested.

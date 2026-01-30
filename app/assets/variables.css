@@ -18,8 +18,8 @@
 	----text_light_grey: #69717c;
 	----black: #2b2e32;
 
-	/* Base size */
-	----type_ramp_base: 20px;
+	/* Fluid base size: 16px at ≤400px viewport, scales to 24px at ≥2000px */
+	----type_ramp_base: clamp(16px, 0.5vw + 14px, 24px);
 	font-size: var(----type_ramp_base);
 
 	----type_ramp_sxx: 0.6rem;
@@ -57,10 +57,10 @@
 	--action_text: #2b373d;
 	--service_text_highlight: #0050c9;
 
-	/* Sizes (px -> rem, base 18px) */
-	--content_max_width: 111.1rem;
-	--page_side_spacing: 4.4rem;
-	--section_block_spacing: 9.3rem;
+	/* Sizes */
+	--content_max_width: 2000px;
+	--page_side_spacing: clamp(1rem, 4vw, 4.4rem);
+	--section_block_spacing: clamp(4rem, 8vw, 9.3rem);
 	--section_min_height: 52.2rem;
 	--text_column_gap: 3.3rem;
 
@@ -76,6 +76,8 @@
 
 
 	--section_title: 600 var(--font-size-section-title)/1.1 var(--font_family_main);
+	--section_title_alt: 300 var(--font-size-section-title)/1.1 var(--font_family_main);
+
 	--subsection_title: 400 var(----type_ramp_lxx)/1.4 var(--font_family_main);
 	--aux_text: 400 0.7rem/0.7rem var(--font_family_main);
 	--wayfinder_text: 600 0.8rem/0.8rem "Segoe UI";

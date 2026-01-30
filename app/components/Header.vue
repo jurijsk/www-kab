@@ -48,9 +48,18 @@ nav a:hover {
 	background: rgba(0, 0, 0, 0.03)
 }
 
-@media (max-width:768px) {
+@container page (max-width: 50rem) {
 	nav ul {
 		gap: 8px
+	}
+}
+
+/* Fallback for browsers without container query support */
+@supports not (container-type: inline-size) {
+	@media (max-width: 768px) {
+		nav ul {
+			gap: 8px
+		}
 	}
 }
 </style>

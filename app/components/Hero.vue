@@ -3,9 +3,7 @@
 		<div class="content">
 			<div class="text">
 				<header>
-					<h1 class="headline">{{ $t('hero.headline') }}</h1>
-					<p class="subtitle">{{ $t('hero.subtitle') }}</p>
-					<p class="name">{{ $t('hero.name') }}</p>
+					<h1 class="headline">{{ $t('hero.headline') }} <br /> <span class="subtitle">{{ $t('hero.subtitle') }}</span> <br /> {{ $t('hero.name') }}</h1>
 				</header>
 				<div class="meta">
 					<nav class="lang-switcher" aria-label="Language switcher">
@@ -35,32 +33,29 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="photo">
-			<img src="/hero-photo.png" alt="" />
+			<div class="photo">
+				<img src="/hero-photo.png" alt="" />
+			</div>
 		</div>
 	</section>
 </template>
 <style scoped>
 .hero {
-	display: grid;
-	padding: 0;
-	grid-template-columns: 1.2fr 1fr;
-	min-height: var(--section_min_height);
-	background-color: var(--background_inverted);
+
+	background: linear-gradient(to right, var(--background_inverted) 50%, var(--alt_background) 50%);
+
 
 	.content {
-		display: flex;
-		flex-direction: column;
-		padding-left: var(--page_side_spacing);
-		padding-bottom: 6rem;
+		display: grid;
+		grid-template-columns: 1.2fr 1fr;
+		min-height: 75vh;
+		height: 75vh;
+		overflow: hidden;
+
+
 	}
 
 	.text {
-		display: flex;
-		flex-direction: column;
-		flex: 1;
-		padding-right: var(--page_side_spacing);
 		padding-top: 4.8rem;
 		border-top: 1px solid var(--decorative_lines_inverted);
 		border-bottom: 1px solid var(--decorative_lines_inverted);
@@ -80,8 +75,7 @@
 	}
 
 	.subtitle {
-		font: var(--subsection_title);
-		font-weight: 300;
+		font: var(--section_title_alt);
 		margin: 0;
 	}
 
@@ -135,6 +129,7 @@
 		font: var(--body_text);
 		color: var(--text_inverted);
 
+
 		.icon {
 			width: 0.8rem;
 			height: 0.8rem;
@@ -143,9 +138,8 @@
 	}
 
 	.photo {
-		background-color: var(--alt_background);
 		position: relative;
-		overflow: hidden;
+		max-width: calc(var(--content_max_width) * 0.45);
 
 		img {
 			position: absolute;
@@ -158,9 +152,10 @@
 		}
 	}
 
-	@media (max-width: 900px) {
+	/*@media (max-width: 900px) {
 		grid-template-columns: 1fr;
 		grid-template-rows: auto 1fr;
+		background: var(--background_inverted);
 
 		.content {
 			order: 2;
@@ -179,6 +174,8 @@
 		.photo {
 			order: 1;
 			min-height: 20rem;
+			max-width: none;
+			background-color: var(--alt_background);
 
 			img {
 				bottom: auto;
@@ -186,6 +183,6 @@
 				height: 100%;
 			}
 		}
-	}
+	}*/
 }
 </style>
