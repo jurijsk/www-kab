@@ -6,7 +6,7 @@
 					<h1 class="headline">{{ $t('hero.headline') }} <br /> <span class="subtitle">{{ $t('hero.subtitle') }}</span> <br /> {{ $t('hero.name') }}</h1>
 				</header>
 				<div class="meta">
-					<nav class="lang-switcher" aria-label="Language switcher">
+					<nav class="lang_switcher" aria-label="Language switcher">
 						<NuxtLink :to="$switchLocalePath('de')" class="lang">Deutsch</NuxtLink>
 						<span class="separator">︱</span>
 						<NuxtLink :to="$switchLocalePath('en')" class="lang">English</NuxtLink>
@@ -43,14 +43,14 @@
 .hero {
 
 	background: linear-gradient(to right, var(--background_inverted) 50%, var(--alt_background) 50%);
-
+	overflow: hidden;
 
 	.content {
 		display: grid;
 		grid-template-columns: 1.2fr 1fr;
 		min-height: 75vh;
 		height: 75vh;
-		overflow: hidden;
+
 
 
 	}
@@ -92,7 +92,7 @@
 		padding-bottom: 4rem;
 	}
 
-	.lang-switcher {
+	.lang_switcher {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.75rem;

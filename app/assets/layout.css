@@ -25,7 +25,7 @@ section {
 
 
 /* Full-bleed section: spans viewport, inner content via .grid or manual padding */
-section.full-bleed {
+section.full_bleed {
 	max-width: none;
 	padding: 0;
 }

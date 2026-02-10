@@ -1,3 +1,37 @@
 {
-	"test": "TEST STRING FROM locales/de.json"
+	"test": "TEST STRING FROM locales/de.json",
+	"site": {
+		"name": "Karoline Antonia Böhmecke"
+	},
+	"nav": {
+		"work": "Arbeiten",
+		"about": "Über mich",
+		"contact": "Kontakt"
+	},
+	"intro": {
+		"greeting": "Hi, mein Name ist Karoline",
+		"description": "Ich bin Expertin für Product Leadership und begleite Unternehmen durch kritische Phasen im Produktbereich.\n\nOb Launch, Skalierung oder Vakanz-Überbrückung – ich bringe Senior-Expertise direkt in dein Team."
+	},
+	"hero": {
+		"headline": "Product Management nach Bedarf",
+		"subtitle": "Strategien schärfen. Teams entwickeln.",
+		"name": "Karoline Antonia Böhmecke",
+		"locations": {
+			"munster": "Münster, CH",
+			"berlin": "Berlin, DE",
+			"remote": "Remote, UTC+1"
+		}
+	},
+	"contactBanner": {
+		"headline": "Product-Expertise wenn es zählt.",
+		"bookA": "Buchen Sie einen",
+		"call": "Anruf",
+		"orDropLine": "oder schreiben Sie auf",
+		"linkedin": "LinkedIn",
+		"callUrl": "https://www.cal.com/karo",
+		"linkedinUrl": "https://www.linkedin.com/in/karoline-antonia-b%C3%B6hmecke/"
+	},
+	"footer": {
+		"copy": "© Karoline Antonia Böhmecke"
+	}
 }

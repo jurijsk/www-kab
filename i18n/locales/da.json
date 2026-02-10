@@ -1,3 +1,37 @@
 {
-	"test": "TEST STRING FROM locales/da.json"
+	"test": "TEST STRING FROM locales/da.json",
+	"site": {
+		"name": "Karoline Antonia Böhmecke"
+	},
+	"nav": {
+		"work": "Arbejde",
+		"about": "Om mig",
+		"contact": "Kontakt"
+	},
+	"intro": {
+		"greeting": "Hej, mit navn er Karoline",
+		"description": "Jeg er ekspert i Product Leadership og guider virksomheder gennem kritiske faser i produktområdet.\n\nUanset om det er lancering, skalering eller vikarovergang – jeg bringer senior-ekspertise direkte til dit team."
+	},
+	"hero": {
+		"headline": "Product Management efter behov",
+		"subtitle": "Skarpere strategier. Udvikling af teams.",
+		"name": "Karoline Antonia Böhmecke",
+		"locations": {
+			"munster": "Münster, CH",
+			"berlin": "Berlin, DE",
+			"remote": "Remote, UTC+1"
+		}
+	},
+	"contactBanner": {
+		"headline": "Product-ekspertise når det betyder noget.",
+		"bookA": "Book en",
+		"call": "opkald",
+		"orDropLine": "eller send en besked på",
+		"linkedin": "LinkedIn",
+		"callUrl": "https://www.cal.com/karo",
+		"linkedinUrl": "https://www.linkedin.com/in/karoline-antonia-b%C3%B6hmecke/"
+	},
+	"footer": {
+		"copy": "© Karoline Antonia Böhmecke"
+	}
 }

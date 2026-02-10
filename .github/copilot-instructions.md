@@ -55,15 +55,15 @@ This is a small Nuxt 4 single-page portfolio site (static target). Keep guidance
       @media (max-width: 900px) { /* fallback */ }
     }
     ```
-  - **Full-bleed sections:** Sections always span full viewport width (for backgrounds). Inside, use `.section_content` wrapper to constrain content:
+  - **Full-bleed sections:** Sections always span full viewport width (for backgrounds). Inside, use `.content` wrapper to constrain content:
     ```html
-    <section class="my-section">
-      <div class="section_content">
+    <section class="my_section">
+      <div class="content">
         <!-- content constrained to max-width -->
       </div>
     </section>
     ```
-    For special cases like Hero (two columns with different backgrounds), handle layout directly in the section without `.section_content`.
+    For special cases like Hero (two columns with different backgrounds), handle layout directly in the section without `.content`.
   - **Fluid spacing:** `--page_side_spacing` and `--section_block_spacing` also use `clamp()` for proportional margins.
 
 - **When an AI agent should modify code:**

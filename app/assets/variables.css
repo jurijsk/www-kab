@@ -17,6 +17,7 @@
 	----almost_black: #4b5563;
 	----text_light_grey: #69717c;
 	----black: #2b2e32;
+	----window-blue: #0050C9;
 
 	/* Fluid base size: 16px at ≤400px viewport, scales to 24px at ≥2000px */
 	----type_ramp_base: clamp(16px, 0.5vw + 14px, 24px);
@@ -55,7 +56,7 @@
 	--logoBackground: #00D084;
 	--hero_background: var(----indigo);
 	--action_text: #2b373d;
-	--service_text_highlight: #0050c9;
+	--service_text_highlight: var(----window-blue);
 
 	/* Sizes */
 	--content_max_width: 2000px;

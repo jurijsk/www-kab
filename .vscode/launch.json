@@ -1,0 +1,16 @@
+{
+	"configurations": [
+		{
+			"name": "Attach",
+			"port": 9229,
+			"processId": "${command:PickProcess}",
+			"request": "attach",
+			//'true' makes it only stop on breakpoints
+			"continueOnAttach": true,
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"type": "node"
+		},
+	]
+}

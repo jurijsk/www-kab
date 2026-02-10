@@ -8,6 +8,10 @@
 		"about": "About",
 		"contact": "Contact"
 	},
+	"intro": {
+		"greeting": "Hi, my name is Karoline",
+		"description": "I'm an expert in Product Leadership and guide companies through critical phases in the product area.\n\nWhether launch, scaling or vacancy bridging – I bring senior expertise directly to your team."
+	},
 	"hero": {
 		"headline": "Product Management on Demand",
 		"subtitle": "Sharpening strategies. Developing teams.",

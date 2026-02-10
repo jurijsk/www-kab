@@ -3,7 +3,8 @@ const { locales, setLocale, locale } = useI18n();
 </script>
 <template>
 	<ContactBanner />
-	<Hero /> current locale {{ locale }}
+	<Hero />
+	<Intro />
 	<Header />
 	<Footer />
 </template>

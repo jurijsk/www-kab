@@ -11,9 +11,7 @@ export default defineNuxtConfig({
 
 	devtools: { enabled: true },
 
-	css: [
-		//'@picocss/pico',
-		'~/assets/main.css'],
+	css: ['~/assets/main.css'],
 	modules: [
 		'@nuxtjs/i18n',
 		'@nuxt/fonts',
@@ -28,7 +26,7 @@ export default defineNuxtConfig({
 			{ code: 'da', name: 'Dansk', file: 'da.json' },
 		]
 	},
-	content: false || {
+	content: {
 		experimental: { sqliteConnector: 'native' },
 	},
 });
