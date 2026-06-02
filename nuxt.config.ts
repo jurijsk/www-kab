@@ -11,21 +11,13 @@ export default defineNuxtConfig({
 
 	devtools: { enabled: true },
 
+	devServer: { port: 3005 },
+
 	css: ['~/assets/main.css'],
 	modules: [
-		'@nuxtjs/i18n',
 		'@nuxt/fonts',
 		'@nuxt/content',
-		'nuxt-studio',
 	],
-	i18n: {
-		defaultLocale: 'en',
-		locales: [
-			{ code: 'en', name: 'English', file: 'en.json' },
-			{ code: 'de', name: 'Deutsch', file: 'de.json' },
-			{ code: 'da', name: 'Dansk', file: 'da.json' },
-		]
-	},
 	content: {
 		experimental: { sqliteConnector: 'native' },
 	},

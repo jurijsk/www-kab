@@ -47,6 +47,7 @@
 	--background_inverted: var(----indigo);
 	--decorative_lines: var(----indigo);
 	--direct_speech: var(----indigo);
+	--root_text: var(----black);
 	--accent_text: var(----deep_green);
 	--direct_speech_alt: var(----deep_green);
 	--aux_content: var(----almost_black);

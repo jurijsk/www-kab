@@ -10,6 +10,13 @@ const serviceSchema = z.object({
 
 export default defineContentConfig({
 	collections: {
+		home: defineCollection({
+			type: 'page',
+			source: 'en/home.md',
+			schema: z.object({
+				title: z.string().optional()
+			})
+		}),
 		services_zero: defineCollection({
 			type: 'data',
 			source: 'services/*.json',

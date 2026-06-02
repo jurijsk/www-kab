@@ -1,10 +1,6 @@
 <script setup lang="ts">
-const { locales, setLocale, locale } = useI18n();
+const { data: home } = await useAsyncData('home', () => queryCollection('home').first());
 </script>
 <template>
-	<ContactBanner />
-	<Hero />
-	<Intro />
-	<Header />
-	<Footer />
+	<ContentRenderer v-if="home" :value="home" />
 </template>
