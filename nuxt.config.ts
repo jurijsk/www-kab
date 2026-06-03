@@ -13,6 +13,14 @@ export default defineNuxtConfig({
 
 	devServer: { port: 3005 },
 
+	// GitHub Pages serves this project repo under /www-kab/, so assets and
+	// routes must be prefixed with that base.
+	app: { baseURL: '/www-kab/' },
+
+	nitro: {
+		prerender: { crawlLinks: true, routes: ['/', '/services'] },
+	},
+
 	css: ['~/assets/main.css'],
 	modules: [
 		'@nuxt/fonts',

@@ -70,7 +70,7 @@ onBeforeUnmount(() => {
 
 			<div class="carousel" role="region" aria-roledescription="carousel" :aria-label="label" tabindex="0">
 				<ul ref="track" class="track" @scroll.passive="onScroll">
-					<li v-for="(q, i) in quotes" :key="i" class="quote" role="group" aria-roledescription="slide" :aria-label="`${i + 1} of ${quotes.length}`" :aria-hidden="i === current ? undefined : 'true'" @click="goTo(i)">
+					<li v-for="(q, i) in quotes" :key="i" class="quote" :class="{ active: i === current }" role="group" aria-roledescription="slide" :aria-label="`${i + 1} of ${quotes.length}`" :aria-hidden="i === current ? undefined : 'true'" @click="goTo(i)">
 						<span class="mark" aria-hidden="true">&ldquo;</span>
 						<blockquote class="text">{{ q.quote }}</blockquote>
 						<footer class="author">
@@ -126,13 +126,14 @@ onBeforeUnmount(() => {
 		align-items: flex-start;
 		gap: 2.5rem;
 		margin: 0;
-		/* vertical padding so card shadows aren't clipped — overflow-x:auto
+		/* padding so the active/hover green glow isn't clipped — overflow-x:auto
 		   forces overflow-y to clip, so the cards need breathing room here. */
-		padding: 1.5rem 0;
+		padding: 2.25rem 1rem;
 		list-style: none;
 		position: relative;
 		overflow-x: auto;
 		scroll-snap-type: x mandatory;
+		scroll-padding-left: 1rem;
 		scrollbar-width: none;
 	}
 
@@ -160,6 +161,14 @@ onBeforeUnmount(() => {
 		box-shadow: 0 2px 10px rgba(45, 66, 98, 0.08);
 		padding: clamp(1rem, 4.5vmin, 2.5rem);
 		cursor: pointer;
+		transition: box-shadow 0.25s ease;
+	}
+
+	/* active card (matches the active step bullet) and hovered card get the
+	   green glow from the Figma hover state. */
+	.quote:hover,
+	.quote.active {
+		box-shadow: 2px 3px 27px color-mix(in srgb, var(--direct_speech_alt) 60%, transparent);
 	}
 
 	.mark {
