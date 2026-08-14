@@ -95,14 +95,14 @@ quotes:
     name: Edwin de Jong
     role: CEO JobRad Österreich
     linkedin: "https://www.linkedin.com/in/edwin-de-jong-873b2337"
-  - quote: "Karo supported our leadership team in strategic realignment projects with great passion and commitment. Her ability to implement agile methods and live product-oriented processes has strengthened our company."
-    name: Olli Diekmann
-    role: Founder and Managing Director mylo GmbH
-    linkedin: ""
   - quote: "What impressed me most was her lasting impact on people, collaboration, and ownership within a product context. She develops teams and individuals not only in their professional skills, but also in terms of their real effectiveness."
     name: Isabell Stahl
     role: Senior Product Manager
     linkedin: "https://www.linkedin.com/in/isabell-stahl-aa0bb0165/"
+  - quote: "Karo supported our leadership team in strategic realignment projects with great passion and commitment. Her ability to implement agile methods and live product-oriented processes has strengthened our company."
+    name: Olli Diekmann
+    role: Founder and Managing Director mylo GmbH
+    linkedin: ""
   - quote: "Karo is a caring colleague and demanding product leader who trusted and relied on my expertise in UX and design, while steering my work to better align with business requirements. The environment of trust and goal-orientation she created made our years working together very rewarding."
     name: Jurijs Kovzels
     role: Product Designer, textjoint
